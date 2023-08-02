@@ -1,0 +1,19 @@
+.error-alert {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.error-message {
+  font-size: 20px;
+  list-style: disc;
+  color: rgb(182, 48, 0);
+}
+
+.login-flash-message {
+  text-align: center;
+  font-size: 20px;
+  list-style: disc;
+  color: rgb(182, 48, 0);
+  margin: 2vh 0 5vh ;
+}

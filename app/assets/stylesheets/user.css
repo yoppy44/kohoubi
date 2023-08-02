@@ -1,0 +1,154 @@
+/* 共通部分 */
+
+* {
+  box-sizing: border-box;
+}
+
+.user-header{
+  height: 100px;
+  width: 100vw;
+  background-color: hwb(61 56% 3%);
+  align-items: center;
+  padding: 20px 100px ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-header-logo{
+	font-size: 5em;
+	text-align: start;
+	line-height: 0.95em;
+	font-weight: bold;
+	color: transparent;
+	background: repeating-linear-gradient( 2deg, #FF3D00 0% 50%, #0091EA 50% 100% );
+	-webkit-background-clip: text;
+}
+
+.form-group {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.form-group:first-child {
+  padding: 0;
+}
+
+.form-text-wrap {
+  width: 100%;
+  height: 20%;
+}
+
+.form-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input-default {
+  width: 50%;
+  margin-top: 5px;
+  height: 35px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+  resize: none;
+}
+
+.indispensable {
+  background: #ea352d;
+  margin-left: 8px;
+  padding: 3px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* //共通部分 */
+
+/* 新規登録ページ */
+
+.register-btn {
+  width: 50%;
+  margin: 20px auto;
+  padding-left: 150px;
+}
+
+.register-red-btn {
+  width: 30%;
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* //新規登録ページ */
+
+/* ログインページ */
+
+.session-btn {
+  width: 50%;
+  margin: 20px auto;
+
+}
+
+.session-red-btn {
+  width: 40%;
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* //ログインページ */
+
+/* ユーザー一覧ページ */
+
+.user-menu{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-menu-btn{
+  text-decoration: none;
+  margin-right: 3vw;
+  color: #333333;
+  font-weight: 600;
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 2px 5px;
+  background-color: powderblue;
+}
+
+.users-index-contents{
+  padding: 20px;
+}
+
+.users-index-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.users-index-item{
+  height: calc(100vh-20px);
+  width: 100%;
+}
+
+.user-list{
+  height: auto;
+}
+
+.user-list-name{
+  text-decoration: none;
+}
+
+/* //ユーザー一覧ページ */

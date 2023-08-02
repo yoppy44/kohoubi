@@ -1,14 +1,24 @@
 <div class="main users-index">
-  <div class="container">
-    <h1 class="users-heading">ユーザー一覧</h1>
-
+  <div class="user-header">
+    <div class="user-header-logo">こほうび</div>
+    <ul class='user-menu'>
+      <% if user_signed_in? %>
+        <li><%= link_to 'ログアウト', destroy_user_session_path, data: { turbo_method: :delete }, class: "user-menu-btn" %></li> 
+      <% else %>  
+        <li><%= link_to 'ログイン', new_user_session_path, class: "user-menu-btn" %></li>
+        <li><%= link_to '新規登録', new_user_registration_path, class: "user-menu-btn" %></li>
+      <% end %> 
+    </ul>
+  </div>  
+  <div class="users-index-contents">
+    <div class="users-index-title">ユーザー一覧</div>
+    <div class="users-index-item">
     <% @users.each do |user| %>
-      <div class="users-index-item">
-        <div class="user-right">
-          <%= link_to(user.nickname, "#") %>
-        </div>
+      <div class="user-list">
+        <%= link_to user.nickname, "#", class: "user-list-name" %>
+        <div class="user-list-text"></div>
       </div>
     <% end %>
-
-  </div>
+    </div>
+  </div>  
 </div>

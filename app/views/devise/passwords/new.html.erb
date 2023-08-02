@@ -1,4 +1,6 @@
-<h2>パスワードをおもいだそう</h2>
+<div class="devise-header">
+  <div class="devise-header-logo">~パスワードを思い出そう~</div>
+</div>
 
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
