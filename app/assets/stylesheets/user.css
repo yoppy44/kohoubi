@@ -1,12 +1,20 @@
-.devise-header{
-  height: 70px;
+/* 共通部分 */
+
+* {
+  box-sizing: border-box;
+}
+
+.user-header{
+  height: 100px;
   width: 100vw;
   background-color: hwb(61 56% 3%);
   align-items: center;
   padding: 20px 100px ;
+  display: flex;
+  justify-content: space-between;
 }
 
-.devise-header-logo{
+.user-header-logo{
 	font-size: 5em;
 	text-align: start;
 	line-height: 0.95em;
@@ -60,6 +68,10 @@
   font-weight: bold;
 }
 
+/* //共通部分 */
+
+/* 新規登録ページ */
+
 .register-btn {
   width: 50%;
   margin: 20px auto;
@@ -75,6 +87,10 @@
   font-size: 14px;
   cursor: pointer;
 }
+
+/* //新規登録ページ */
+
+/* ログインページ */
 
 .session-btn {
   width: 50%;
@@ -92,3 +108,47 @@
   cursor: pointer;
 }
 
+/* //ログインページ */
+
+/* ユーザー一覧ページ */
+
+.user-menu{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-menu-btn{
+  text-decoration: none;
+  margin-right: 3vw;
+  color: #333333;
+  font-weight: 600;
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 2px 5px;
+  background-color: powderblue;
+}
+
+.users-index-contents{
+  padding: 20px;
+}
+
+.users-index-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.users-index-item{
+  height: calc(100vh-20px);
+  width: 100%;
+}
+
+.user-list{
+  height: auto;
+}
+
+.user-list-name{
+  text-decoration: none;
+}
+
+/* //ユーザー一覧ページ */
