@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.user-header{
+.kohoubi-header{
   height: 100px;
   width: 100vw;
   background-color: hwb(61 56% 3%);
@@ -14,7 +14,7 @@
   justify-content: space-between;
 }
 
-.user-header-logo{
+.header-logo{
 	font-size: 5em;
 	text-align: start;
 	line-height: 0.95em;

@@ -3,3 +3,6 @@ ja:
     attributes:
       user:
         nickname: ニックネーム
+
+      task:
+        task: やること  

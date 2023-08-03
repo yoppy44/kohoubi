@@ -1,11 +1,13 @@
-<div class="user-header">
-  <div class="user-header-logo">~ろぐいん~</div>
+<div class="kohoubi-header">
+  <div class="header-logo">~ろぐいん~</div>
 </div>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  
   <div class='login-flash-message'>
     <%= flash[:alert] %>
   </div>
+
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">メールアドレス</label>
@@ -19,17 +21,18 @@
       <span class="indispensable">必須</span>
     </div>
     <%= f.password_field :password, class:"input-default", id:"password", placeholder:"" %>
-
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end %>
+  </div>
+  <%# <% if devise_mapping.rememberable? %>
+    <%# <div class="field"> %>
+      <%# <%= f.check_box :remember_me %> 
+      <%# <%= f.label :remember_me %> 
+    <%# </div> %>
+  <%# <% end %> 
 
   <div class='session-btn'>
     <%= f.submit "はいる！" ,class:"session-red-btn" %>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+
+<%= render "shared/user_go" %>

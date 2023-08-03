@@ -1,1 +1,22 @@
-yarukoto
+<div class="kohoubi-header">
+  <div class="header-logo">~やることをきめる！~</div>
+</div>
+
+<%= form_with model: @task, local: true do |f| %>
+  <%= render 'shared/error_messages2', model: f.object %>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">やること</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :content, class:"input-default", id:"content", placeholder:"やることをかいてね" %>
+  </div>
+
+  <div class='register-btn'>
+    <%= f.submit "とうろく！" ,class:"register-red-btn" %>
+  </div>
+<% end %>    
+
+<%= render "shared/user_go" %>
+
