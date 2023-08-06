@@ -15,10 +15,9 @@
     <div class="users-index-title">ユーザー一覧</div>
     <div class="users-index-item">
     <% @users.each do |user| %>
-      <div class="user-list">
-        <%= link_to user.nickname, "#", class: "user-list-name" %>
-        <div class="user-list-text"></div>
-      </div>
+      <div class="user-index-list">
+        <%= link_to user.nickname, user_path(user), class: "user-index-name" %>
+      </div>  
     <% end %>
     </div>
   </div>  

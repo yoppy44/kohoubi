@@ -141,14 +141,99 @@
 .users-index-item{
   height: calc(100vh-20px);
   width: 100%;
+  display: block;
+}
+
+.user-index-list{
+  height: auto;
+  width: 100%;
+  border: #333333 1px solid;
+  border-radius: 5px;
+  background-color: hwb(172 52% 8%);
+  margin-bottom: 20px;
+}
+
+.user-index-name{
+  text-decoration: none;
+  font-size: 40px;
 }
 
 .user-list{
   height: auto;
+  width: 100%;
+  border: #333333 1px solid;
+  border-radius: 5px;
+  background-color: hwb(172 52% 8%);
+  margin-bottom: 20px;
 }
 
 .user-list-name{
   text-decoration: none;
+  height: 20px;
+  width: 100%;
 }
 
+.user-list-content{
+  display: flex;
+  height: auto;
+  width: 100%;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+.user-task-list{
+  height: auto;
+  width: 100%;
+  border: #333333 1px solid;
+  border-radius: 5px;
+}
+
+.user-list-task-title{
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: #333333 1px solid;
+  border-radius: 5px;
+}
+
+.user-list-task-titlelog{
+  font-weight: 300;
+}
+
+/* .user-daily-tasks{
+
+} */
+
+/* .user-daily-task{
+
+} */
+
+.user-reward-list{
+  height: auto;
+  width: 100%;
+  border: #333333 1px solid;
+  border-radius: 5px;
+}
+
+.user-list-reward-title{
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: #333333 1px solid;
+  border-radius: 5px;
+}
+
+.user-list-reward-titlelog{
+  font-weight: 300;
+}
+
+/* .user-weekly-rewards{
+
+}
+
+.user-weekly-reward{
+
+} */
 /* //ユーザー一覧ページ */
